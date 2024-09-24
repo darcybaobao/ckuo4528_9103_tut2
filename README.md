@@ -11,9 +11,14 @@
 
 - Colour contrast, both these artworks use white black and a pop of colour to create contrast. I 
 
-![alt text](image1.jpg)
+3. 
+| Two  Birds   | Image 2 |
+| ----------- | ----------- |
+| ![alt text](image1.jpg)      | ![alt text](image.png)       |
 
-![alt text](image.png)
+
+
+
 
 
 
