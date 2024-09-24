@@ -13,7 +13,7 @@
 
 ![alt text](image1.jpg)
 
-![alt text](image.jpg)
+![alt text](image.png)
 
 
 
