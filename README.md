@@ -18,14 +18,15 @@
 
 ### **Part two: Coding Technique Exploration**
 
-1. Coding technique 
+1. Coding techniques that can be used are rotation, scaling and translation. 
 
 2. 
+
 `const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
 const img = new Image();
-img.src = 'dove-of-peace.png'; // Replace with a valid URL or path to Picasso's Dove of Peace
+img.src = 'dove-of-peace.jpg'; // Replace with a valid URL or path to Picasso's Dove of Peace
 
 img.onload = function () {
   ctx.translate(canvas.width / 2, canvas.height / 2); // Move to the center of the canvas
@@ -37,13 +38,12 @@ img.onload = function () {
     ctx.drawImage(img, -50, -50, 100, 100); // Draw the dove at the new orientation and scale
     ctx.restore(); // Restore to the original state before the next transformation
   }
-};
-`
+};`
 
 
 
 
-Find a coding technique that could assist in implementing the imaging technique you selected in Part 1 of this quiz.
+
 In no more than 100 words, discuss how this coding technique might help achieve or or contribute to the desired effect.
 You're encouraged to draw inspiration from any coding language or toolkit.
 Provide an image or screenshot showcasing the coding technique in action, along with a link to an example implementation (including a link to some example code).
