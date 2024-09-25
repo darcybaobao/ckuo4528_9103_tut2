@@ -20,51 +20,9 @@
 
 1. Coding techniques that can be used are rotation, scaling and translation. 
 
-2. 
+2. The NGV has a [learning resource] (https://www.ngv.vic.gov.au/school_resource/digital-creatives-tessellate-by-code/) that teaches how to create tessellatoions using code in Scratch. The programming language is a good source of inspirtion as it shows how a simple cube can be transformed through rotation and translation tessellations. If/else loops are used to differentiate between odd and even colums and loops are used for repeition. Alternatively, we can use JS and the ctx.drawImage()function to create repetitions of the dove image.  See the images below for reference. 
 
-`const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');
+| Scratch code   | Scratch output | JS code   | JS output |
+| ----------- | ----------- | ----------- | ----------- |
+| ![alt text](ex1.jpg)      | ![alt text](ex2.jng)       |![alt text](ex4.png)       |![alt text](ex3.png)       |
 
-const img = new Image();
-img.src = 'dove-of-peace.jpg'; // Replace with a valid URL or path to Picasso's Dove of Peace
-
-img.onload = function () {
-  ctx.translate(canvas.width / 2, canvas.height / 2); // Move to the center of the canvas
-
-  for (let i = 0; i < 12; i++) {
-    ctx.save(); // Save the current transformation state
-    ctx.rotate((Math.PI / 6) * i); // Rotate the canvas 30 degrees
-    ctx.scale(1 - i * 0.08, 1 - i * 0.08); // Scale the dove smaller each time
-    ctx.drawImage(img, -50, -50, 100, 100); // Draw the dove at the new orientation and scale
-    ctx.restore(); // Restore to the original state before the next transformation
-  }
-};`
-
- import os 
- import sys 
-  
- print(os.environ) 
- print("const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');
-
-const img = new Image();
-img.src = 'dove-of-peace.jpg'; // Replace with a valid URL or path to Picasso's Dove of Peace
-
-img.onload = function () {
-  ctx.translate(canvas.width / 2, canvas.height / 2); // Move to the center of the canvas
-
-  for (let i = 0; i < 12; i++) {
-    ctx.save(); // Save the current transformation state
-    ctx.rotate((Math.PI / 6) * i); // Rotate the canvas 30 degrees
-    ctx.scale(1 - i * 0.08, 1 - i * 0.08); // Scale the dove smaller each time
-    ctx.drawImage(img, -50, -50, 100, 100); // Draw the dove at the new orientation and scale
-    ctx.restore(); // Restore to the original state before the next transformation
-  }
-};") 
- print(sys.version) 
-
-
-
-In no more than 100 words, discuss how this coding technique might help achieve or or contribute to the desired effect.
-You're encouraged to draw inspiration from any coding language or toolkit.
-Provide an image or screenshot showcasing the coding technique in action, along with a link to an example implementation (including a link to some example code).
